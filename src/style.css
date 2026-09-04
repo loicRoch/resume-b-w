@@ -1,31 +1,52 @@
 * {
-  margin-left: 0.4rem;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: white;
+  display: flexbox;
+  flex-direction: column;
+  margin: 4px;
+  width: 100%;
+  min-width: 370px;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#identity {
+  position: relative;
+}
+#contactDiv {
+  visibility: hidden;
+  z-index: 3;
+  transition: 2s;
+  border: solid;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+li {
+  list-style-position: inside;
+  list-style-type: square;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
   margin: 2rem 0 0 1rem;
 }
-#contact {
-  display: flex;
-  & li {
-    list-style: none;
-    margin-inline: 1rem;
-  }
-}
+
 #profile {
   margin-top: 0.4rem;
-}
-li {
-  list-style: circle;
 }
 .knowledge {
   background-color: rgba(128, 128, 128, 0.434);
   color: black;
-  width: 50%;
+  width: 100%;
   padding-block: 0.4rem;
 }
 .knowledge > ul > div {
@@ -64,11 +85,17 @@ li {
   font-weight: bold;
   background-color: rgba(54, 54, 54, 0.421);
 }
+#education,
+#experienceInterests,
+.knowledge {
+  width: 100%;
+  max-width: 900px;
+}
 h3 {
-  margin: 0.4rem 0 0 0.4rem;
+  margin-top: 1rem;
 }
 h4 {
-  margin-top: 0;
+  margin-bottom: 1rem;
 }
 tr,
 td {
@@ -82,9 +109,24 @@ tr:nth-child(even) {
     padding-inline: 0.4rem;
   }
 }
-#identity:hover,
-.knowledge:hover,
-#education:hover,
-#experienceInterests:hover {
-  cursor: pointer;
+@media only screen and (min-width: 600px) {
+  * {
+    margin-left: 0.4rem;
+  }
+  #profile {
+    margin-top: 4rem;
+  }
+  #programmingMethod {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+@media only screen and  (min-width: 1000px) {
+    main{
+      left :0.5%;
+      justify-self: left;
+    }
+
 }
