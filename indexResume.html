@@ -3,46 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cube.css" />
-
+    <link rel="stylesheet" href="style_resume.css" />
+    <title>Loic Roch Dévellopeur d'applications web</title>
   </head>
   <body>
-    <main>
+    <div id="main container">
       <div id="identity">
         <header><h1>Loïc Roch, Developpeur d'applications web</h1></header>
-            <div class="scene open" id="scene1">              
-        <div class="cube" id="cube1">
-            <div class="front " id="front1">contact</div>
-            <div class="back " id="back1">contact</div>
-            <div class="right " id="right1"></div>
-            <div class="left " id="left1"></div>
-            <div class="top " id="top1"></div>
-            <div class="bottom " id="bottom1"></div>
-        </div>
-                <address id="contactDiv">
+        <address>
           <ul id="contact">
-            <li>loic.roch@gmail.com</li>
+            <li>
+              <a href="mailto:loic.roch@gmail.com">loic.roch@gmail.com</a>
+            </li>
             <li>06 50 86 71 64</li>
             <li>Jouy-le-Moutier, Val d'Oise</li>
           </ul>
+          <div id="portfolio">
+            <img
+              src="./assets/qrcode_parallax2d.vercel.app.png"
+              alt=""
+              srcset=""
+            />
+            <p>
+              Mon portfolio
+              <br />
+              <a href="https://parallax2d.vercel.app/" target="_blank"
+                >https://parallax2d.vercel.app/</a
+              >
+            </p>
+          </div>
         </address>
-        </div>
         <section id="profile">
+          <h2>Profile</h2>
           <p>
             Développeur full-stack, je suis enthousiasmé par le web 3D et
             j'aspire à construire les sites de demain. <br />
-          <br/>
             Dans le cadre de ma formation diplomante, je recherche un stage
-            d'une durée de deux mois sur la période de décembre 2026 à février 2027.
+            d'une durée de deux mois sur la période de décembre 2026 à février
+            2027.
           </p>
         </section>
       </div>
-      <div id="programmingMethod">
+      <div id="knowledgeContainer">
         <section class="knowledge" id="programming">
           <h2>Code & technologies</h2>
           <ul class="skills">
-            <div><span>Html</span><span> Jade</span></div>
+            <div><span>Html</span><span> Jade</span><span>SVG</span></div>
             <div><span>CSS</span><span>CSS3 </span><span>Bootstrap</span></div>
             <div>
               <span>Javascript</span> <span>React</span><span> Threejs</span>
@@ -53,38 +59,41 @@
               <span>Mongoose</span>
             </div>
             <div>
-              <span>Base de données</span><span>SQL</span><span>MongoDB</span><span>MySQL</span
-                ><span>Postgres</span>
-                <span>Prisma</span>
-                <span>Sequelize</span>
-              </div>
-              <div><span>Blender</span><span>Maximo</span></div>
-            </ul>
-          </section>
-          <section class="knowledge" id="methods">
-            <h2>Pratiques & méthodes</h2>
-            <ul class="skills">
-              <div>
-                <span>Collaboration</span><span>Méthode Agile</span
-                  ><span>scrum (testeur)</span><span>Jira</span><span>Slack </span
-                    ><span>Google & Microsoft suites</span> <span>Git</span
-                      ><span>Github</span>
-                    </div>
-                    <div></div>
-                    <div>
-                      <span>Optimisation et accessibilité</span> <span>SEO & RGAA</span>
-                    </div>
-                    <div>
-                      <span>Contrôle qualité</span><span>Chrome DevTools</span
-                        ><span>Lightroom</span>
-                      </div>
-                      <div><span> Contrôle conformité RGPD</span></div>
-                      <div>
-                        <span>Prototypage</span> <span>Figma</span> <span>Origami</span>
-                      </div>
-                    </ul>
-                  </section>
-                </div>
+              <span>Base de données</span><span>SQL</span><span>MongoDB</span
+              ><span>MySQL</span><span>Postgres</span>
+              <span>Prisma</span>
+              <span>Sequelize</span>
+            </div>
+            <div>
+              <span>API REST</span><span>Docker</span><span>Microservices</span>
+            </div>
+            <div><span>Blender</span><span>Maximo</span></div>
+          </ul>
+        </section>
+        <section class="knowledge" id="methods">
+          <h2>Pratiques & méthodes</h2>
+          <ul class="skills">
+            <div>
+              <span>Collaboration</span><span>Méthode Agile</span
+              ><span>scrum (testeur)</span><span>Jira</span><span>Slack </span
+              ><span>Google & Microsoft suites</span> <span>Git</span
+              ><span>Github</span>
+            </div>
+            <div></div>
+            <div>
+              <span>Optimisation et accessibilité</span> <span>SEO & RGAA</span>
+            </div>
+            <div>
+              <span>Contrôle qualité</span><span>Chrome DevTools</span
+              ><span>Lightroom</span>
+            </div>
+            <div><span> Contrôle conformité RGPD</span></div>
+            <div>
+              <span>Prototypage</span> <span>Figma</span> <span>Origami</span>
+            </div>
+          </ul>
+        </section>
+      </div>
       <section id="education">
         <h2>Formation</h2>
         <h3>
@@ -105,16 +114,6 @@
           contractuelle.
         </p>
       </section>
-                    <div class="scene" id="scene2">              
-              <div class="cube" id="cube2">
-            <div class="front" id="front2"></div>
-            <div class="back" id="back2"></div>
-            <div class="right" id="right2"></div>
-            <div class="left" id="left2"></div>
-            <div class="top" id="top2"></div>
-            <div class="bottom" id="bottom2"></div>
-        </div>
-        </div>
       <div id="experienceInterests">
         <section id="experience">
           <h2>Expérience</h2>
@@ -167,8 +166,7 @@
           </p>
         </section>
       </div>
-    </main>
-</div>
-        <script src="main.js"></script>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
