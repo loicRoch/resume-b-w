@@ -23,9 +23,11 @@ main {
   visibility: hidden;
   z-index: 3;
   transition: 2s;
-  border: solid;
   border-radius: 1rem;
   padding: 2rem;
+  background: rgba(46, 77, 77, 0.3);
+  border: 2px solid rgba(57, 75, 75, 0.5);
+  box-shadow: 0 0 30px rgba(52, 64, 64, 0.7);
 }
 li {
   list-style-position: inside;
@@ -123,10 +125,9 @@ tr:nth-child(even) {
   }
 }
 
-@media only screen and  (min-width: 1000px) {
-    main{
-      left :0.5%;
-      justify-self: left;
-    }
-
+@media only screen and (min-width: 1000px) {
+  main {
+    left: 0.5%;
+    justify-self: left;
+  }
 }

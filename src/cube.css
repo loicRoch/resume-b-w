@@ -20,13 +20,11 @@
 .cube {
   position: relative;
   transform-style: preserve-3d;
-  animation: rotateCube 25s infinite linear;
   text-align: center;
   justify-items: center;
 }
 #cube1 {
   animation: rotateCube 25s infinite linear;
-  /* transform: rotateX(-30deg) rotateY(45deg); */
   top: -25%;
   left: 25%;
 }
@@ -125,6 +123,8 @@
   :root {
     --panelSize2: 500px;
   }
+
+
   #scene2 {
     margin: 0;
     padding: 0;
@@ -186,7 +186,7 @@
       transform: translateY(-50px) rotateX(-25deg) rotateY(0);
     }
     50% {
-      transform: translateY(-250px) rotateX(-25deg) rotateY(180deg);
+      transform: translateY(-300px) rotateX(-25deg) rotateY(180deg);
     }
     100% {
       transform: translateY(-50px) rotateX(-25deg) rotateY(360deg);
